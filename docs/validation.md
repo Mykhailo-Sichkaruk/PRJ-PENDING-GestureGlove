@@ -18,3 +18,5 @@ Actual Arch Intel/NVIDIA GUI behavior remains to be checked by Yaroslav. The gra
 The teacher's original npm lockfile reports 81 audit findings (6 low, 16 moderate, 40 high, 19 critical) at installation time. It was preserved for this migration; no automatic breaking dependency upgrade was applied. Treat dependency updates as a separate follow-up before exposing a development server. Current CI produces static artifacts and does not publish a server.
 
 The optional Teams wrapper is not part of these checks; university consent remains pending.
+
+A clean Git clone at an unrelated `/tmp` path also passed pure flake evaluation, all six MCP initialization checks, the 16-net comparison and the complete Fritzing edit/render check. Its local Fritzing part cache was created from the committed part bundles.

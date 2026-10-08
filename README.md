@@ -3,6 +3,7 @@
 Team: **Mykhailo Sichkaruk (ST033)** and **[Yaroslav Marochok](https://github.com/ymarochok) (ST029)**.
 Our goal is to complete the SMVIT semester project. The assigned team PRJ number is pending.
 This is an independent repository created from the teacher's KNIFE/STHDF template.
+GitHub: [PRJ-PENDING-GestureGlove](https://github.com/Mykhailo-Sichkaruk/PRJ-PENDING-GestureGlove).
 
 ## Start here
 
