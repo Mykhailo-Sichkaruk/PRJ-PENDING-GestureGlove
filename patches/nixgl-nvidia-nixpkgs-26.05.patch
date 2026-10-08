@@ -1,0 +1,10 @@
+--- a/nixGL.nix
++++ b/nixGL.nix
+@@ -87,7 +87,6 @@
+ 
+       nvidiaLibsOnly = nvidiaDrivers.override {
+         libsOnly = true;
+-        kernel = null;
+       };
+ 
+       nixGLNvidiaBumblebee = writeExecutable {

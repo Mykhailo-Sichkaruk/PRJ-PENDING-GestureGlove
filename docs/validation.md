@@ -20,3 +20,7 @@ The teacher's original npm lockfile reports 81 audit findings (6 low, 16 moderat
 The optional Teams wrapper is not part of these checks; university consent remains pending.
 
 A clean Git clone at an unrelated `/tmp` path also passed pure flake evaluation, all six MCP initialization checks, the 16-net comparison and the complete Fritzing edit/render check. Its local Fritzing part cache was created from the committed part bundles.
+
+After switching the workspace, Codex CLI confirmed the path-independent project MCP entries (Teams disabled), and direnv loaded Node/Python from the flake. GitHub Actions built and uploaded the site successfully on Ubuntu.
+
+The optional NVIDIA branch initially failed because upstream nixGL still passed a removed `kernel` argument to nixpkgs' driver package. A small compatibility patch removes that obsolete argument. The patched wrapper built successfully against the host NVIDIA 595.71.05 driver; this is a build/launcher check, not an Arch rendering test.

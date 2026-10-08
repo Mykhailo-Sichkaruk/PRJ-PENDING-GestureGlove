@@ -23,7 +23,7 @@ case "$mode" in
     wrapper=$(cd "$project_root" && nix build --impure --no-link --print-out-paths --expr '
       let f = builtins.getFlake (toString ./.);
           pkgs = import f.inputs.nixpkgs { system = builtins.currentSystem; config.allowUnfree = true; };
-      in (import f.inputs.nixgl { inherit pkgs; enable32bits = false; }).auto.nixGLNvidia')
+      in (import ./nix/nixgl.nix { inherit pkgs; nixgl = f.inputs.nixgl; }).auto.nixGLNvidia')
     exec "$wrapper"/bin/nixGLNvidia-* "$@" ;;
   *) printf 'Unknown SMVIT_GL=%s (auto, native, mesa, software, nvidia)\n' "$mode" >&2; exit 2 ;;
 esac

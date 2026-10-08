@@ -36,7 +36,7 @@ SMVIT_GL=mesa nix run .#fritzing -- examples/poc/electronics/fritzing/gesture-gl
 
 To retain that preference with direnv, put `export SMVIT_GL=mesa` in ignored `.envrc.local`, then run `direnv allow`.
 If the desktop is wired to NVIDIA, try `SMVIT_GL=nvidia`. This opt-in path uses impure evaluation to read the host driver version and may download the matching proprietary driver libraries. The normal flake remains pure. On hybrid systems the active display/PRIME configuration matters; neither mode is claimed validated on Arch yet.
-The nixGL source and application packages share the pinned nixpkgs input. See [nixGL](https://github.com/nix-community/nixGL).
+The nixGL source and application packages share the pinned nixpkgs input. `nix/nixgl.nix` applies a small compatibility patch for the removed NVIDIA `kernel` override in nixpkgs 26.05. See [nixGL](https://github.com/nix-community/nixGL).
 
 Acceptance on Arch: open each example, rotate/zoom FreeCAD, pan KiCad, move a Fritzing part in a disposable copy, close and reopen. Record OS/GPU/driver/mode and errors in `docs/validation.md`.
 

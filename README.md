@@ -49,6 +49,7 @@ The inherited npm dependency lock currently reports audit findings; see [validat
 ## Team workflow
 
 Use a short feature branch, commit source files, and review through a pull request.
+Yaroslav can clone the public repository now. Until collaborator access is granted, use a personal fork for pushes and open PRs from it.
 Agree who edits a binary `.FCStd` or `.fzz` before starting: Git cannot reliably merge simultaneous edits.
 Keep one person editing a KiCad sheet at a time; text-based storage does not guarantee a safe merge.
 Record each student's contribution in their own ST section, with links to commits/results.
