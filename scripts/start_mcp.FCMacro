@@ -1,0 +1,16 @@
+"""Start the pinned FreeCAD MCP addon in the project's FreeCAD instance."""
+import os
+import sys
+
+import FreeCAD as App
+import FreeCADGui as Gui
+
+addon = os.environ["SMVIT_FREECAD_ADDON"]
+if addon not in sys.path:
+    sys.path.insert(0, addon)
+
+from rpc_server import rpc_server
+
+Gui.activateWorkbench("PartWorkbench")
+App.Console.PrintMessage(rpc_server.start_rpc_server() + "\n")
+Gui.getMainWindow().setWindowTitle("SMVIT | Gesture glove | FreeCAD + MCP")

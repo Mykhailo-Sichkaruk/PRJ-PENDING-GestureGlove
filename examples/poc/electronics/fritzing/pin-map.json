@@ -1,0 +1,24 @@
+{
+  "controller": "Adafruit ESP32-S3 Feather #5323",
+  "flex": {
+    "Thumb": "A5 / GPIO8",
+    "Index": "D5 / GPIO5",
+    "Middle": "D6 / GPIO6",
+    "Ring": "D9 / GPIO9",
+    "Little": "D10 / GPIO10"
+  },
+  "contacts": {
+    "Thumb": "A0 / GPIO18",
+    "Index": "A1 / GPIO17",
+    "Middle": "A2 / GPIO16",
+    "Ring": "A3 / GPIO15",
+    "Little": "A4 / GPIO14"
+  },
+  "imu": {
+    "SDA": "GPIO3",
+    "SCL": "GPIO4",
+    "AD0": "GND",
+    "VCC": "3V3 (verify GY-521 variant)"
+  },
+  "power": "Battery to onboard JST; USB-C charging; slide switch pulls EN to GND for OFF"
+}

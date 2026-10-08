@@ -43,8 +43,14 @@ sidebar_position: 1
 Toto je hlavná stránka slovenskej dokumentácie.
 
 - 🔪 [KNIFE príspevky](./knifes/index.md)
-- ⚙️ [7Ds rámec](./7ds/index.md)
+- ⚙️ [7Ds rámec](./7Ds/index.md)
 - 🧱 [SDLC – Framework](./sdlc/index.md)
 - 🎯 [Q12 – Framework](./q12/index.md)
 - 🏫 [STHDF – Framework](./sthdf/index.md)
 - 🧭 [Späť na Hub](../index.md)
+
+## Gesture Glove — SMVIT 2026–2027
+
+- [Tímový projekt](./sthdf/PRJ-PENDING-GestureGlove/index.md)
+- [Mykhailo Sichkaruk — ST033](./sthdf/ST-033-SichkarukMykhailo/index.md)
+- [Yaroslav Marochok — ST029](./sthdf/ST-029-MarochokYaroslav/index.md)

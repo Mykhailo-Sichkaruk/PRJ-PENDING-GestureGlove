@@ -40,3 +40,9 @@ Vitaj v KNIFE dokumentácii. Vyber si jazyk:
 
 - 🇸🇰 **Slovensky** → [/sk/](./sk/index.md)
 - 🇬🇧 **English** → [/en/](./en/index.md)
+
+## Gesture Glove — SMVIT 2026–2027
+
+- [Tímový projekt](./sk/sthdf/PRJ-PENDING-GestureGlove/index.md)
+- [Mykhailo Sichkaruk — ST033](./sk/sthdf/ST-033-SichkarukMykhailo/index.md)
+- [Yaroslav Marochok — ST029](./sk/sthdf/ST-029-MarochokYaroslav/index.md)

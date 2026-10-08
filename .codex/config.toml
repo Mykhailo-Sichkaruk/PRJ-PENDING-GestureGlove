@@ -1,0 +1,27 @@
+# Shared additions; personal auth/model settings remain in the user config.
+# Start Codex anywhere inside this trusted Git checkout.
+
+[mcp_servers.freecad]
+command = "bash"
+args = ["-c", "root=\"$(git rev-parse --show-toplevel)\" && cd \"$root\" && exec nix run .#freecad-mcp --"]
+startup_timeout_sec = 300
+tool_timeout_sec = 120
+
+[mcp_servers.kicad]
+command = "bash"
+args = ["-c", "root=\"$(git rev-parse --show-toplevel)\" && cd \"$root\" && exec nix run .#kicad-mcp --"]
+startup_timeout_sec = 300
+tool_timeout_sec = 120
+
+[mcp_servers.fritzing]
+command = "bash"
+args = ["-c", "root=\"$(git rev-parse --show-toplevel)\" && cd \"$root\" && exec nix run .#fritzing-mcp --"]
+startup_timeout_sec = 300
+tool_timeout_sec = 300
+
+[mcp_servers.teams]
+command = "bash"
+args = ["-c", "root=\"$(git rev-parse --show-toplevel)\" && cd \"$root\" && exec nix run .#teams-mcp --"]
+startup_timeout_sec = 300
+tool_timeout_sec = 120
+enabled = false

@@ -78,3 +78,7 @@ publishing/docusaurus/static/** -text
 node_modules/**  -text
 build/**         -text
 .docusaurus/**   -text
+# Native CAD archives must never undergo text/EOL merging.
+*.FCStd binary
+*.fzpz binary
+*.fzz binary

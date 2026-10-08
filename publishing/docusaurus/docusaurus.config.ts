@@ -6,15 +6,15 @@ const {
   COMMIT_SHA = 'local',
   BUILD_DATE = '',
   GITHUB_REPO_URL = '',
-  SITE_URL = 'https://knife-framework.github.io',
-  BASE_URL = '/knifes_overview/',
+  SITE_URL = 'http://localhost:3000',
+  BASE_URL = '/',
 } = process.env;
 
 const commitLink =
   GITHUB_REPO_URL && COMMIT_SHA ? `${GITHUB_REPO_URL}/commit/${COMMIT_SHA}` : '';
 
 const config: Config = {
-  title: 'KNIFE - STHDF 2026-2027 - Student Template',
+  title: 'Gesture Glove · SMVIT 2026–2027',
   url: SITE_URL,
   baseUrl: BASE_URL,
   deploymentBranch: 'gh-pages',
@@ -59,7 +59,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'KNIFE - STHDF 2026-2027 - Student Template',
+      title: 'Gesture Glove · SMVIT 2026–2027',
       logo: {
         alt: 'KNIFE',
         src: 'img/logo.png',

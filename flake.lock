@@ -1,0 +1,155 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "freecad-mcp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790290945,
+        "narHash": "sha256-E6oTCpLMI/WBAmWwIWKu8tmWJAFPKZ55R6/zvd+8Pzo=",
+        "owner": "neka-nat",
+        "repo": "freecad-mcp",
+        "rev": "d6bbe4b38be3a622b5981d9d2afa7037ee080534",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neka-nat",
+        "repo": "freecad-mcp",
+        "rev": "d6bbe4b38be3a622b5981d9d2afa7037ee080534",
+        "type": "github"
+      }
+    },
+    "fritzing-mcp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789335094,
+        "narHash": "sha256-o+rnNNEu4B6uibRrBD6pjWObNj/FQl8z1nJHxHpzvMs=",
+        "owner": "fedoragobrowse-design",
+        "repo": "fritzing-mcp",
+        "rev": "3a8c7ca9b4b9ec52f356070670c05c651f096c24",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fedoragobrowse-design",
+        "repo": "fritzing-mcp",
+        "rev": "3a8c7ca9b4b9ec52f356070670c05c651f096c24",
+        "type": "github"
+      }
+    },
+    "kicad-mcp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785265714,
+        "narHash": "sha256-FCTTMXHQdW7Y4AQgg7L3RcgyY+teOyMAhZHXNxXTqVk=",
+        "owner": "NiRuLabs",
+        "repo": "kicad-mcp-server",
+        "rev": "2fd14d32fb2532071649cf6779b5e97b524e0a1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NiRuLabs",
+        "repo": "kicad-mcp-server",
+        "rev": "2fd14d32fb2532071649cf6779b5e97b524e0a1b",
+        "type": "github"
+      }
+    },
+    "kicad-sch-api-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1764913148,
+        "narHash": "sha256-GjLcOxSB9nYGoWFstisRZkJ8OdQdME+/gcJOye5MDe0=",
+        "owner": "circuit-synth",
+        "repo": "kicad-sch-api",
+        "rev": "505bca23e91cf3fa6e3b66976e529e775eada3ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "circuit-synth",
+        "repo": "kicad-sch-api",
+        "rev": "505bca23e91cf3fa6e3b66976e529e775eada3ba",
+        "type": "github"
+      }
+    },
+    "nixgl": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762090880,
+        "narHash": "sha256-fbRQzIGPkjZa83MowjbD2ALaJf9y6KMDdJBQMKFeY/8=",
+        "owner": "nix-community",
+        "repo": "nixGL",
+        "rev": "b6105297e6f0cd041670c3e8628394d4ee247ed5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixGL",
+        "rev": "b6105297e6f0cd041670c3e8628394d4ee247ed5",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1790533781,
+        "narHash": "sha256-F+b8u43BVF5DlM0pz7JQSbtbwKy5PrHIT5zQUekXsD0=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "cf5e76507c6e23b59f7e0ffcc7baa2a39ddd8442",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "freecad-mcp-src": "freecad-mcp-src",
+        "fritzing-mcp-src": "fritzing-mcp-src",
+        "kicad-mcp-src": "kicad-mcp-src",
+        "kicad-sch-api-src": "kicad-sch-api-src",
+        "nixgl": "nixgl",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

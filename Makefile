@@ -16,7 +16,8 @@
 
 
 .DEFAULT_GOAL := help
-SHELL := /bin/bash
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
 NODE  := node
 NPM   := npm
 
@@ -48,10 +49,10 @@ else
 endif
 COMMIT_SHA := $(shell git rev-parse --short HEAD 2>/dev/null || echo local)
 
-GITHUB_REPO_URL ?= https://github.com/06-STH-Projects/2026_sthdf_class_template
+GITHUB_REPO_URL ?= $(shell git remote get-url origin 2>/dev/null || true)
 # Derive repo name for GH Pages baseUrl (e.g., /knifes_overview/)
 REPO_NAME := $(notdir $(basename $(GITHUB_REPO_URL)))
-DEFAULT_SITE_URL := https://knifes.systemthinking.sk
+DEFAULT_SITE_URL := http://localhost:3000
 DEFAULT_BASE_URL := /
 
 

@@ -1,0 +1,10 @@
+--- a/rpc_server/view_manager.py
++++ b/rpc_server/view_manager.py
+@@ -2,0 +3 @@
++import os
+@@ -152 +153,4 @@
+-            view.saveImage(save_path, resolved_width, resolved_height, "Current", "Framebuffer")
++            view.saveImage(
++                save_path, resolved_width, resolved_height, "Current",
++                os.environ.get("SMVIT_SCREENSHOT_METHOD", "Offscreen"),
++            )

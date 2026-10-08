@@ -17,6 +17,7 @@ yarn.lock
 # 🏗️ Výstupy z buildov
 /site/                     # MkDocs
 *.lock
+!flake.lock
 /public/                   # Hugo (len ak nepoužívam worktree pre gh-pages!)
 /build/                    # Docusaurus
 #assets mám v content pre multimedialny obsah, ktorý sa pri builde kopíruje do dosucasurus/static
@@ -66,3 +67,15 @@ build/
 /.docusaurus/
 .docusaurus/
 /.docusaurus/
+
+# Local CAD state, private course material, and Nix environments
+/.local/
+/.direnv/
+/result*
+.envrc.local
+*.FCBak
+*.FCStd1
+*.kicad_prl
+*.lck
+*-backups/
+~*
